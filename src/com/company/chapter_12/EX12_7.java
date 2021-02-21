@@ -2,8 +2,9 @@ package com.company.chapter_12;
 
 import com.company.BaseSolution;
 
-import java.util.Scanner;
-
+/**
+ * Gets a string from the user and prints it's contents reversed
+ */
 public class EX12_7 extends BaseSolution {
 
     public static void main(String[] args) {
@@ -13,12 +14,10 @@ public class EX12_7 extends BaseSolution {
         // String reversed = reverseRecursively(word);
         String reversed = reverseRecursive(word);
         System.out.println("Reversed: " + reversed);
+
+        close();
     }
 
-//    public static String reverseRecursively(String word) {
-//        int lastIndex = word.length() - 1;
-//        return reverseRecursively(word, "", lastIndex);
-//    }
     private static String reverseRecursive(String word) {
         int lastIndex = word.length() - 1;
         return reverseRecursive(word, lastIndex);
@@ -30,15 +29,6 @@ public class EX12_7 extends BaseSolution {
         return reversed;
     }
 
-//    private static String reverseRecursively(String word, String curr, int index) {
-//        if (index == 0) {
-//            curr += word.charAt(index);
-//            return curr;
-//        } else {
-//            curr += word.charAt(index);
-//            return reverseRecursively(word, curr, index - 1);
-//        }
-//    }
 
 
 }

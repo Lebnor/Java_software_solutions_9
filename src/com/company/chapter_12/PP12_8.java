@@ -12,6 +12,7 @@ public class PP12_8 extends BaseSolution {
         int line = getInt();
         printTriangle(line);
 
+        close();
     }
     private static void printSpaces(int spaces) {
         for (int i = 0; i < spaces; i++) {

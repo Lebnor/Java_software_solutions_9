@@ -18,4 +18,8 @@ public class BaseSolution {
     public static int getInt() {
         return scanner.nextInt();
     }
+
+    public static void close() {
+        scanner.close();
+    }
 }

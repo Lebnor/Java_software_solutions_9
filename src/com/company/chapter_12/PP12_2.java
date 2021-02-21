@@ -2,6 +2,9 @@ package com.company.chapter_12;
 
 import com.company.BaseSolution;
 
+/**
+ * calculates greatest common divider of 2 integers
+ */
 public class PP12_2 extends BaseSolution {
     public static void main(String[] args) {
         System.out.println("Enter 2 numbers:");
@@ -10,6 +13,8 @@ public class PP12_2 extends BaseSolution {
 
         int gcd = gcd(num1, num2);
         System.out.println("gcd: " + gcd);
+
+        close();
     }
 
     public static int gcd(int num1, int num2) {

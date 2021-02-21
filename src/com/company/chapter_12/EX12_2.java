@@ -22,6 +22,8 @@ public class EX12_2 {
         System.out.println("y: " + y);
         System.out.println("Result of x^y (x to the power of y):");
         System.out.println("\t" + x + "^" + y + " = " + result);
+
+
     }
 
     /**

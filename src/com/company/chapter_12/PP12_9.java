@@ -28,6 +28,8 @@ public class PP12_9 {
             int rand = (int) ( Math.random() * 100 );
             printIfInArray(strings, "" + rand);
         }
+
+
     }
 
     private static void printIfInArray(String[] list, String toCheck) {

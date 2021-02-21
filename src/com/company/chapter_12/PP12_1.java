@@ -2,12 +2,17 @@ package com.company.chapter_12;
 
 import com.company.BaseSolution;
 
+/**
+ * recursively checks if a given string is palindrome
+ */
 public class PP12_1 extends BaseSolution {
     public static void main(String[] args) {
         System.out.println("Enter a word:");
         String word = getString();
         boolean isPalindrome = isPalindrome(word);
         System.out.println(word + " is palindrome: " + isPalindrome);
+
+        close();
     }
 
 
