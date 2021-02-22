@@ -24,9 +24,9 @@ public class PP12_6 {
     // return a Blurb
     public static String generateBlurb() {
         String whoozit = generateWhoozit();
-        String whatzit = generateWhatzit();
+        String whatzit = randomWhatzits();
         String endingWhoozit = generateWhoozit();
-        return  whoozit + whatzit + endingWhoozit;
+        return whoozit + whatzit + endingWhoozit;
     }
 
     // return a whatzit
@@ -35,6 +35,7 @@ public class PP12_6 {
         whatzit += new Random().nextBoolean() ? "z" : "d"; // add either z or d
         return whatzit;
     }
+
     // return a whoozit
     private static String generateWhoozit() {
         String whoozit = "x"; // always starts with an x
@@ -42,16 +43,29 @@ public class PP12_6 {
         return whoozit;
     }
 
-    // generate random amount of y's
+    // generate random amount of a string
     private static String randomY() {
         int max = (int) (Math.random() * MAX_LETTER);
         return randomY("y", max);
     }
+
     // helper method
-    private static String randomY(String y , int max) {
-        if (y.length() >= max)
-            return y;
-        return randomY(y + "y", max);
+    private static String randomY(String all, int max) {
+        if (all.length() >= max)
+            return all;
+        return randomY( all + "y", max);
+    }
+
+    // generate a random amount of whatzit
+    private static String randomWhatzits() {
+        int random = (int) (Math.random() * MAX_LETTER);
+        return randomWhatzits("", random);
+    }
+    // helper method
+    private static String randomWhatzits(String all, int max) {
+        if (all.length() > max)
+            return all;
+        return randomWhatzits(generateWhatzit() + all, max);
     }
 
 }
