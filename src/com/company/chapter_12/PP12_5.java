@@ -68,11 +68,9 @@ public class PP12_5 {
                 if ( !putAllQueens(col + 1) ) {
                     removeQueen(i, col);
                 }
-
                 removeQueen(i, col); // remove queen so we can put it in the next row on next iteration
             }
         }
-
         // if we got here then there are no more rows in the column to place queens,
         // so we didn't find a solution
         return false;
