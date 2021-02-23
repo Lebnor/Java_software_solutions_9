@@ -10,6 +10,7 @@ public class PP12_9 {
     private final static int SIZE = 20;
 
     public static void main(String[] args) {
+        // initialize array of strings
         String[] strings = new String[SIZE];
         for (int i = 0; i < SIZE; i++) {
             strings[i] = ( "" + i );
